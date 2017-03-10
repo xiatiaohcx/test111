@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*,java.net.URL,java.sql.*,com.baidu.bae.api.util.BaeEnv" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,java.net.URL,java.sql.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -19,6 +19,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	//String username = request.getHeader("BAE_ENV_AK");
 	//String password = request.getHeader("BAE_ENV_SK");
        //（3）从线程变量BaeEnv接口获取ip、端口、用户名和密码信息
+    /**
 	String host = BaeEnv.getBaeHeader(BaeEnv.BAE_ENV_ADDR_SQL_IP);
 	String port = BaeEnv.getBaeHeader(BaeEnv.BAE_ENV_ADDR_SQL_PORT);
 	String username = BaeEnv.getBaeHeader(BaeEnv.BAE_ENV_AK);
@@ -66,6 +67,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  				throw e;
 		}
 	}
+	 */
  %>
   </body>
 </html>
