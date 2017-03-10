@@ -46,7 +46,7 @@ public class CoreService {
 			String msgType = requestMap.get("MsgType");
 			// 默认回复此文本消息
 			TextMessage textMessage = new TextMessage();
-			String result = "";
+			String result = "";  
 
 			// 文本消息
 			if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_TEXT)) {
